@@ -1,6 +1,16 @@
 [
   {
+    "condition": {
+      "typeReachable": "io.netty.channel.epoll.Native"
+    },
     "name":"io.netty.channel.epoll.EpollServerSocketChannel",
-    "methods":[{"name":"<init>","parameterTypes":[] }]
+    "allDeclaredConstructors": true
+  },
+  {
+    "condition": {
+      "typeReachable": "io.netty.channel.epoll.Native"
+    },
+    "name": "io.netty.util.internal.NativeLibraryUtil",
+    "allDeclaredMethods": true
   }
 ]

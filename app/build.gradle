@@ -44,8 +44,10 @@ tasks.named('test') {
 }
 
 graalvmNative {
-    toolchainDetection = false
-    metadataRepository {
-        enabled = true
+    binaries {
+        main {
+            // These classes contain functions that are implemented in native code (in libnetty_transport_native_epoll)
+            buildArgs.add('--initialize-at-run-time=io.netty.channel.epoll,io.netty.channel.unix.Limits,io.netty.channel.unix.IovArray,io.netty.channel.unix.Errors')
+        }
     }
 }
