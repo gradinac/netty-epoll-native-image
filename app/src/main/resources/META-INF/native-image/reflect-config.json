@@ -1,0 +1,6 @@
+[
+  {
+    "name":"io.netty.channel.epoll.EpollServerSocketChannel",
+    "methods":[{"name":"<init>","parameterTypes":[] }]
+  }
+]
